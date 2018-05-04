@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>点赞</title>
+    <style>
+        .table{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 700px;
+             width: 500px;
+             border: 1px solid #808080;
+             z-index: -9999;
+        }
+       .thumb-main{
+            height: 100px;
+            width: 110px;
+            border-right:10px solid  #fa1004;
+            border-bottom: 10px solid  #fa1004;
+           position: absolute;
+           bottom: 30px;
+            right: 175px;
+            border-radius:0 0 100px 16px/0 0 110px 22px; 
+            background: #ffffff;
+         z-index:1;
+       }
+       .thumb-right{
+            height: 300px;
+            width:80px;
+            border-right:18px solid  #fa1004;
+            border-bottom: 12px solid  #fa1004;
+            border-top: 12px solid  #fa1004;
+           position: absolute;
+           bottom: 50px;
+            right: 110px;
+            border-radius:0px 80px 60px 32px/30px 100px 120px 22px; 
+            transform: rotate(11deg);
+            z-index: -1;
+            background: #ffffff;
+       }
+       .thumb-right-top{
+            height: 170px;
+            width: 50px;
+            border-left:15px solid  #fa1004;
+            position: absolute;
+           top: 210px;
+            right: 120px;
+            border-radius:40px 0px 0px 60px/85px 0px 0px 85px;
+            z-index: -2;
+       }
+       .thumb-top{
+            height: 200px;
+            width: 120px;
+            border-left:15px solid  #fa1004;
+            border-right:15px solid  #fa1004;
+            border-top:15px solid  #fa1004;
+            position: absolute;
+           top: 20px;
+            right: 120px;
+            border-radius:75px 75px 40px 40px/85px 85px 85px 85px;
+            transform: rotate(19deg);
+       }
+       .thumb-top-left{
+            height:80px;
+            width: 30px;
+            border-right:15px solid  #fa1004;
+            border-bottom: 15px solid  #fa1004;
+           position: absolute;
+           top: 185px;
+            left: 198px;
+            border-radius:0px 30px 20px 0px/0px 35px 30px 85px;
+            transform: rotate(5deg)
+       }
+       .thumb-top-left2{
+            height:100px;
+            width: 120px;
+            border-left:15px solid  #fa1004;
+            border-top: 15px solid  #fa1004;
+           position: absolute;
+           top: 257px;
+            left: 78px;
+            border-radius:120px 0px 0px 0px/100px 35px 30px 85px;
+            transform: rotate(6deg)
+       }
+       .thumb-left-1{
+           height:110px;
+            width: 200px;
+            border-right:15px solid  #fa1004;
+            border-bottom: 15px solid  #fa1004;
+            border-left: 15px solid  #fa1004;
+           position: absolute;
+           top: 329px;
+            left:60px;
+            border-radius:0px 115px 110px 200px/40px 85px 80px 85px;
+            transform: rotate(15deg);
+            background: #ffffff;
+            z-index: 5;
+       }
+       .thumb-left-2{
+           height:110px;
+            width: 190px;
+            border-right:15px solid  #fa1004;
+            border-bottom: 15px solid  #fa1004;
+            border-left: 15px solid  #fa1004;
+           position: absolute;
+           top: 399px;
+            left:55px;
+            border-radius:60px 115px 110px 200px/40px 85px 80px 85px;
+            transform: rotate(15deg);
+            background: #ffffff;
+            z-index: 4;
+       }
+       .thumb-left-3{
+           height:110px;
+            width: 180px;
+            border-right:15px solid  #fa1004;
+            border-bottom: 15px solid  #fa1004;
+            border-left: 15px solid  #fa1004;
+           position: absolute;
+           top: 469px;
+            left:50px;
+            border-radius:60px 115px 110px 200px/40px 85px 80px 85px;
+            transform: rotate(15deg);
+            background: #ffffff;
+            z-index: 3;
+       }
+       .thumb-left-4{
+           height:110px;
+            width: 170px;
+            border-right:15px solid  #fa1004;
+            border-bottom: 15px solid  #fa1004;
+            border-left: 15px solid  #fa1004;
+           position: absolute;
+           top: 539px;
+            left:49px;
+            border-radius:60px 115px 110px 200px/40px 85px 80px 85px;
+            transform: rotate(15deg);
+            z-index: 2;
+       }
+    </style>
+</head>
+<body>
+    <div class="time">0</div>
+    <div class="table" style="background:url(./.png);background-size:500px 700px;">
+        <div class="thumb-main"></div>
+        <div class="thumb-right"></div>
+        <div class="thumb-right-top"></div>
+        <div class="thumb-top"></div>
+        <div class="thumb-top-left"></div>
+        <div class="thumb-top-left2"></div>
+        <div class="thumb-left-1"></div>
+        <div class="thumb-left-2"></div>
+        <div class="thumb-left-3"></div>
+        <div class="thumb-left-4"></div>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script src="https://cdn.bootcss.com/systemjs/0.21.3/system.js"></script>
+</html>
